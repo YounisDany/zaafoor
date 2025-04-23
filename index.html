@@ -3,430 +3,568 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ZAAFOOR - Professional Recruitment Services</title>
+    <title>UK INTERNATIONAL SERVICES LIMITED | Professional Business Solutions</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
     <style>
         :root {
-            --primary-color: #0056b3;
-            --secondary-color: #003366;
-            --accent-color: #00a0e9;
-            --light-color: #f8f9fa;
-            --dark-color: #343a40;
-            --white: #ffffff;
+            --primary: #0056b3;
+            --secondary: #0056b3;
+            --dark: #222;
+            --light: #f8f9fa;
+            --gray: #6c757d;
             --transition: all 0.3s ease;
         }
-
+        
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
-
+        
         body {
             font-family: 'Poppins', sans-serif;
+            color: var(--dark);
             line-height: 1.6;
-            color: #333;
-            background-color: var(--white);
             overflow-x: hidden;
+            background-color: #f5f7fa;
         }
-
-        /* Header Styles */
+        
+        h1, h2, h3, h4 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+        }
+        
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+        
+        ul {
+            list-style: none;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            background: var(--primary);
+            color: white;
+            border-radius: 50px;
+            font-weight: 500;
+            transition: var(--transition);
+            border: 2px solid transparent;
+        }
+        
+        .btn:hover {
+            background: transparent;
+            color: var(--primary);
+            border-color: var(--primary);
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0, 86, 179, 0.2);
+        }
+        
+        .btn-primary {
+            background: var(--secondary);
+            margin-left: 15px;
+        }
+        
+        .btn-primary:hover {
+            color: var(--secondary);
+            border-color: var(--secondary);
+            box-shadow: 0 10px 20px rgba(255, 107, 0, 0.2);
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Header */
         header {
-            background-color: var(--white);
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
             position: fixed;
+            top: 0;
+            left: 0;
             width: 100%;
             z-index: 1000;
+            padding: 20px 0;
             transition: var(--transition);
+            background: rgba(255, 255, 255, 0.95);
+            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
         }
-
+        
         .header-inner {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 15px 5%;
-            max-width: 1400px;
-            margin: 0 auto;
         }
-
+        
         .logo {
             font-size: 28px;
             font-weight: 700;
-            color: var(--primary-color);
-            text-decoration: none;
+            color: var(--dark);
+            font-family: 'Montserrat', sans-serif;
+        }
+        
+        .logo span {
+            color: var(--primary);
+        }
+        
+        .nav-links {
             display: flex;
             align-items: center;
         }
-
-        .logo span {
-            color: var(--secondary-color);
-        }
-
-        .nav-links {
-            display: flex;
-            list-style: none;
-        }
-
+        
         .nav-links li {
             margin-left: 30px;
+            position: relative;
         }
-
+        
         .nav-links a {
-            color: var(--dark-color);
-            text-decoration: none;
             font-weight: 500;
-            font-size: 16px;
             transition: var(--transition);
             position: relative;
         }
-
-        .nav-links a:hover {
-            color: var(--primary-color);
-        }
-
+        
         .nav-links a:after {
             content: '';
             position: absolute;
-            width: 0;
-            height: 2px;
-            background: var(--primary-color);
             bottom: -5px;
             left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--primary);
             transition: var(--transition);
         }
-
+        
         .nav-links a:hover:after {
             width: 100%;
         }
-
+        
         .mobile-menu-btn {
             display: none;
             background: none;
             border: none;
             font-size: 24px;
-            color: var(--primary-color);
+            color: var(--dark);
             cursor: pointer;
         }
-
+        
         /* Hero Section */
         .hero {
             height: 100vh;
-            background: linear-gradient(rgba(0, 86, 179, 0.8), rgba(0, 51, 102, 0.8)), url('https://images.unsplash.com/photo-1521791136064-7986c2920216?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80') no-repeat center center/cover;
+            min-height: 800px;
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1521791136064-7986c2920216?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80') no-repeat center center/cover;
             display: flex;
             align-items: center;
-            justify-content: center;
+            color: white;
             text-align: center;
-            color: var(--white);
-            padding: 0 20px;
+            position: relative;
+            overflow: hidden;
         }
-
+        
+        .hero:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, rgba(0, 86, 179, 0.8) 0%, rgba(255, 107, 0, 0.6) 100%);
+            z-index: 1;
+        }
+        
         .hero-content {
+            position: relative;
+            z-index: 2;
             max-width: 800px;
+            margin: 0 auto;
+            padding: 0 20px;
             animation: fadeInUp 1s ease;
         }
-
+        
         .hero h1 {
             font-size: 48px;
             margin-bottom: 20px;
-            font-weight: 700;
+            line-height: 1.2;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
         }
-
+        
         .hero p {
             font-size: 18px;
             margin-bottom: 30px;
+            opacity: 0.9;
         }
-
-        .btn {
-            display: inline-block;
-            background: var(--white);
-            color: var(--primary-color);
-            padding: 12px 30px;
-            border-radius: 50px;
-            text-decoration: none;
-            font-weight: 600;
-            transition: var(--transition);
-            border: 2px solid var(--white);
-            margin: 0 10px;
-        }
-
-        .btn:hover {
-            background: transparent;
-            color: var(--white);
-        }
-
-        .btn-primary {
-            background: var(--primary-color);
-            color: var(--white);
-        }
-
-        .btn-primary:hover {
-            background: transparent;
-            color: var(--white);
-            border-color: var(--white);
-        }
-
+        
         /* About Section */
         .section {
-            padding: 100px 5%;
-            max-width: 1400px;
-            margin: 0 auto;
+            padding: 100px 0;
         }
-
+        
         .section-title {
             text-align: center;
             margin-bottom: 60px;
         }
-
+        
         .section-title h2 {
             font-size: 36px;
-            color: var(--secondary-color);
             position: relative;
             display: inline-block;
             padding-bottom: 15px;
         }
-
+        
         .section-title h2:after {
             content: '';
             position: absolute;
-            width: 70px;
-            height: 3px;
-            background: var(--primary-color);
             bottom: 0;
             left: 50%;
             transform: translateX(-50%);
+            width: 80px;
+            height: 3px;
+            background: var(--primary);
         }
-
+        
         .about-content {
             display: flex;
             align-items: center;
             gap: 50px;
         }
-
+        
         .about-text {
             flex: 1;
         }
-
+        
         .about-text h3 {
             font-size: 28px;
-            color: var(--secondary-color);
             margin-bottom: 20px;
+            color: var(--primary);
         }
-
+        
         .about-text p {
             margin-bottom: 15px;
-            color: #555;
         }
-
-        .values-list {
-            margin-top: 30px;
-        }
-
+        
         .values-list li {
             margin-bottom: 10px;
             position: relative;
             padding-left: 25px;
-            color: #555;
         }
-
+        
         .values-list li:before {
             content: '\f00c';
             font-family: 'Font Awesome 6 Free';
             font-weight: 900;
             position: absolute;
             left: 0;
-            color: var(--primary-color);
+            top: 2px;
+            color: var(--secondary);
         }
-
+        
         .about-image {
             flex: 1;
             border-radius: 10px;
             overflow: hidden;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1);
+            transition: var(--transition);
         }
-
+        
+        .about-image:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 30px 40px rgba(0, 0, 0, 0.15);
+        }
+        
         .about-image img {
             width: 100%;
             height: auto;
             display: block;
             transition: var(--transition);
         }
-
+        
         .about-image:hover img {
             transform: scale(1.05);
         }
-
+        
         /* Services Section */
         .services {
-            background-color: var(--light-color);
+            background: var(--light);
         }
-
+        
         .services-container {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
             gap: 30px;
         }
-
+        
         .service-card {
-            background: var(--white);
+            background: white;
             border-radius: 10px;
             overflow: hidden;
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
             transition: var(--transition);
         }
-
+        
         .service-card:hover {
             transform: translateY(-10px);
             box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
         }
-
+        
         .service-img {
-            height: 200px;
+            height: 220px;
             overflow: hidden;
         }
-
+        
         .service-img img {
             width: 100%;
             height: 100%;
             object-fit: cover;
             transition: var(--transition);
         }
-
+        
         .service-card:hover .service-img img {
             transform: scale(1.1);
         }
-
+        
         .service-content {
             padding: 25px;
         }
-
+        
         .service-content h3 {
             font-size: 22px;
             margin-bottom: 15px;
-            color: var(--secondary-color);
+            color: var(--primary);
         }
-
+        
         .service-content p {
-            color: #666;
+            color: var(--gray);
             margin-bottom: 20px;
         }
-
+        
         .read-more {
-            display: inline-block;
-            color: var(--primary-color);
-            font-weight: 600;
-            text-decoration: none;
-            transition: var(--transition);
+            color: var(--secondary);
+            font-weight: 500;
+            display: inline-flex;
+            align-items: center;
         }
-
-        .read-more:hover {
-            color: var(--secondary-color);
-        }
-
+        
         .read-more i {
             margin-left: 5px;
             transition: var(--transition);
         }
-
+        
         .read-more:hover i {
             transform: translateX(5px);
         }
-
+        
+        /* Slider */
+        .slider {
+            position: relative;
+            height: 500px;
+            overflow: hidden;
+            margin: 50px 0;
+        }
+        
+        .slide {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            transition: opacity 1s ease;
+        }
+        
+        .slide.active {
+            opacity: 1;
+        }
+        
+        .slide img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .slide-content {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            padding: 50px;
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+            color: white;
+        }
+        
+        .slide-content h3 {
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+        
+        .prev, .next {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(255, 255, 255, 0.3);
+            color: white;
+            border: none;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            font-size: 20px;
+            cursor: pointer;
+            z-index: 10;
+            transition: var(--transition);
+        }
+        
+        .prev:hover, .next:hover {
+            background: rgba(255, 255, 255, 0.5);
+        }
+        
+        .prev {
+            left: 30px;
+        }
+        
+        .next {
+            right: 30px;
+        }
+        
+        .slider-nav {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            z-index: 10;
+        }
+        
+        .slider-nav button {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            border: none;
+            background: rgba(255, 255, 255, 0.5);
+            margin: 0 5px;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+        
+        .slider-nav button.active {
+            background: white;
+            transform: scale(1.2);
+        }
+        
         /* Team Section */
         .team-member {
             text-align: center;
-            margin-top: 50px;
+            max-width: 600px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+            transition: var(--transition);
         }
-
+        
+        .team-member:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+        }
+        
         .team-member img {
             width: 200px;
             height: 200px;
             border-radius: 50%;
             object-fit: cover;
-            border: 5px solid var(--light-color);
-            margin-bottom: 20px;
+            margin-bottom: 25px;
+            border: 5px solid var(--light);
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
         }
-
+        
         .team-member h3 {
             font-size: 24px;
-            color: var(--secondary-color);
-            margin-bottom: 5px;
+            margin-bottom: 10px;
+            color: var(--primary);
         }
-
+        
         .team-member p {
-            color: var(--primary-color);
-            font-weight: 500;
+            color: var(--gray);
+            font-size: 16px;
         }
-
+        
         /* Contact Section */
         .contact {
-            background-color: var(--light-color);
+            background: linear-gradient(rgba(0, 86, 179, 0.9), rgba(0, 86, 179, 0.9)), url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80') no-repeat center center/cover;
+            color: white;
         }
-
+        
         .contact-container {
             display: flex;
             gap: 50px;
         }
-
+        
         .contact-info {
             flex: 1;
         }
-
+        
         .contact-info h3 {
-            font-size: 24px;
-            color: var(--secondary-color);
-            margin-bottom: 20px;
+            font-size: 28px;
+            margin-bottom: 30px;
+            position: relative;
+            padding-bottom: 15px;
         }
-
+        
+        .contact-info h3:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 60px;
+            height: 3px;
+            background: var(--secondary);
+        }
+        
         .info-item {
             display: flex;
             align-items: flex-start;
             margin-bottom: 25px;
         }
-
+        
         .info-icon {
             width: 50px;
             height: 50px;
-            background: var(--primary-color);
-            color: var(--white);
+            background: rgba(255, 255, 255, 0.1);
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
+            margin-right: 20px;
             font-size: 20px;
-            margin-right: 15px;
-            flex-shrink: 0;
+            color: var(--secondary);
         }
-
+        
         .info-text h4 {
             font-size: 18px;
-            color: var(--secondary-color);
             margin-bottom: 5px;
         }
-
-        .info-text p, .info-text a {
-            color: #555;
-            text-decoration: none;
+        
+        .info-text a {
             transition: var(--transition);
         }
-
+        
         .info-text a:hover {
-            color: var(--primary-color);
+            color: var(--secondary);
         }
-
+        
         .contact-form {
             flex: 1;
-            background: var(--white);
+            background: white;
             padding: 40px;
             border-radius: 10px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
         }
-
+        
         .form-group {
             margin-bottom: 20px;
         }
-
+        
         .form-control {
             width: 100%;
             padding: 12px 15px;
@@ -435,126 +573,117 @@
             font-family: 'Poppins', sans-serif;
             transition: var(--transition);
         }
-
+        
         .form-control:focus {
             outline: none;
-            border-color: var(--primary-color);
-            box-shadow: 0 0 0 3px rgba(0, 86, 179, 0.1);
+            border-color: var(--primary);
+            box-shadow: 0 0 0 3px rgba(0, 86, 179, 0.2);
         }
-
+        
         textarea.form-control {
             min-height: 150px;
             resize: vertical;
         }
-
+        
         .submit-btn {
-            background: var(--primary-color);
-            color: var(--white);
+            background: var(--secondary);
+            color: white;
             border: none;
             padding: 12px 30px;
             border-radius: 50px;
             cursor: pointer;
-            font-weight: 600;
+            font-weight: 500;
             transition: var(--transition);
+            width: 100%;
         }
-
+        
         .submit-btn:hover {
-            background: var(--secondary-color);
+            background: #e05e00;
             transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(255, 107, 0, 0.3);
         }
-
+        
         /* Footer */
         footer {
-            background: var(--secondary-color);
-            color: var(--white);
-            padding: 70px 5% 30px;
+            background: var(--dark);
+            color: white;
+            padding: 70px 0 0;
         }
-
+        
         .footer-content {
-            display: flex;
-            justify-content: space-between;
-            max-width: 1400px;
-            margin: 0 auto 40px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 50px;
         }
-
-        .footer-col {
-            flex: 1;
-            margin-right: 30px;
-        }
-
-        .footer-col:last-child {
-            margin-right: 0;
-        }
-
+        
         .footer-col h3 {
             font-size: 20px;
             margin-bottom: 25px;
             position: relative;
             padding-bottom: 10px;
         }
-
+        
         .footer-col h3:after {
             content: '';
             position: absolute;
-            width: 50px;
-            height: 2px;
-            background: var(--primary-color);
             bottom: 0;
             left: 0;
+            width: 40px;
+            height: 2px;
+            background: var(--secondary);
         }
-
+        
         .footer-col p {
             margin-bottom: 20px;
             opacity: 0.8;
         }
-
+        
         .social-links {
             display: flex;
             gap: 15px;
         }
-
+        
         .social-links a {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.1);
             display: flex;
             align-items: center;
             justify-content: center;
-            width: 40px;
-            height: 40px;
-            background: rgba(255, 255, 255, 0.1);
-            border-radius: 50%;
-            color: var(--white);
             transition: var(--transition);
         }
-
+        
         .social-links a:hover {
-            background: var(--primary-color);
+            background: var(--secondary);
             transform: translateY(-5px);
         }
-
+        
         .quick-links li {
             margin-bottom: 10px;
-            list-style: none;
         }
-
+        
         .quick-links a {
-            color: var(--white);
             opacity: 0.8;
-            text-decoration: none;
             transition: var(--transition);
+            display: inline-block;
         }
-
+        
         .quick-links a:hover {
             opacity: 1;
-            padding-left: 5px;
+            color: var(--secondary);
+            transform: translateX(5px);
         }
-
+        
         .footer-bottom {
             text-align: center;
-            padding-top: 30px;
+            padding: 20px 0;
             border-top: 1px solid rgba(255, 255, 255, 0.1);
-            max-width: 1400px;
-            margin: 0 auto;
+            font-size: 14px;
+            opacity: 0.7;
         }
-
+        
         /* Animations */
         @keyframes fadeInUp {
             from {
@@ -566,40 +695,39 @@
                 transform: translateY(0);
             }
         }
-
-        /* Responsive Design */
+        
+        /* Responsive */
         @media (max-width: 992px) {
-            .about-content, .contact-container {
+            .about-content {
                 flex-direction: column;
             }
             
-            .about-image, .about-text, .contact-info, .contact-form {
-                width: 100%;
+            .contact-container {
+                flex-direction: column;
             }
             
-            .footer-content {
-                flex-wrap: wrap;
-            }
-            
-            .footer-col {
-                flex: 100%;
-                margin-right: 0;
-                margin-bottom: 30px;
+            .hero h1 {
+                font-size: 40px;
             }
         }
-
+        
         @media (max-width: 768px) {
+            .mobile-menu-btn {
+                display: block;
+            }
+            
             .nav-links {
                 position: fixed;
                 top: 80px;
                 left: -100%;
                 width: 100%;
                 height: calc(100vh - 80px);
-                background: var(--white);
+                background: white;
                 flex-direction: column;
                 align-items: center;
-                padding-top: 50px;
+                justify-content: center;
                 transition: var(--transition);
+                box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
             }
             
             .nav-links.active {
@@ -610,393 +738,350 @@
                 margin: 15px 0;
             }
             
-            .mobile-menu-btn {
-                display: block;
-            }
-            
             .hero h1 {
-                font-size: 36px;
+                font-size: 32px;
             }
             
-            .section-title h2 {
-                font-size: 30px;
+            .hero p {
+                font-size: 16px;
             }
-        }
-
-        @media (max-width: 576px) {
-            .btn {
+            
+            .btn, .btn-primary {
                 display: block;
+                width: max-content;
                 margin: 10px auto;
-                max-width: 200px;
+            }
+            
+            .btn-primary {
+                margin-left: auto;
             }
             
             .services-container {
                 grid-template-columns: 1fr;
             }
+            
+            .slider {
+                height: 400px;
+            }
         }
-
-        /* Slider Styles */
-        .slider {
-            position: relative;
-            width: 100%;
-            height: 500px;
-            overflow: hidden;
-            margin: 50px 0;
-            border-radius: 10px;
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-        }
-
-        .slide {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            opacity: 0;
-            transition: opacity 1s ease;
-        }
-
-        .slide.active {
-            opacity: 1;
-        }
-
-        .slide img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-
-        .slide-content {
-            position: absolute;
-            bottom: 50px;
-            left: 50px;
-            background: rgba(0, 86, 179, 0.8);
-            color: white;
-            padding: 20px;
-            max-width: 500px;
-            border-radius: 5px;
-        }
-
-        .slide-content h3 {
-            font-size: 24px;
-            margin-bottom: 10px;
-        }
-
-        .slider-nav {
-            position: absolute;
-            bottom: 20px;
-            left: 50%;
-            transform: translateX(-50%);
-            display: flex;
-            z-index: 10;
-        }
-
-        .slider-nav button {
-            width: 12px;
-            height: 12px;
-            border-radius: 50%;
-            border: none;
-            background: rgba(255, 255, 255, 0.5);
-            margin: 0 5px;
-            cursor: pointer;
-            transition: var(--transition);
-        }
-
-        .slider-nav button.active {
-            background: var(--white);
-            transform: scale(1.2);
-        }
-
-        .prev, .next {
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            background: rgba(0, 0, 0, 0.5);
-            color: white;
-            border: none;
-            padding: 15px;
-            cursor: pointer;
-            z-index: 10;
-            border-radius: 50%;
-            transition: var(--transition);
-        }
-
-        .prev:hover, .next:hover {
-            background: var(--primary-color);
-        }
-
-        .prev {
-            left: 20px;
-        }
-
-        .next {
-            right: 20px;
+        
+        @media (max-width: 576px) {
+            .hero h1 {
+                font-size: 28px;
+            }
+            
+            .section-title h2 {
+                font-size: 30px;
+            }
+            
+            .slide-content {
+                padding: 30px;
+            }
+            
+            .slide-content h3 {
+                font-size: 24px;
+            }
         }
     </style>
 </head>
 <body>
     <!-- Header -->
     <header>
-        <div class="header-inner">
-            <a href="#" class="logo">ZAA<span>FOOR</span></a>
-            <button class="mobile-menu-btn">
-                <i class="fas fa-bars"></i>
-            </button>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#team">Team</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="apply.php">Apply Now</a></li>
-            </ul>
+        <div class="container">
+            <div class="header-inner">
+                <a href="#" class="logo">UK INTERNATIONAL <span>SERVICES</span></a>
+                <button class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#team">Team</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="apply.php">Apply Now</a></li>
+                    <li><a href="arabic.html">العربية</a></li>
+                </ul>
+            </div>
         </div>
     </header>
 
     <!-- Hero Section -->
     <section class="hero" id="home">
         <div class="hero-content">
-            <h1>A company that provides services limited professionally</h1>
+            <h1>Professional Business Solutions Worldwide</h1>
             <p>We specialize in connecting businesses with reliable, productive workforce to achieve the most effective and efficient service for your business needs.</p>
-            <a href="#services" class="btn">Our Services</a>
-            <a href="apply.php" class="btn btn-primary">Apply Now</a>
+            <div class="hero-buttons">
+                <a href="#services" class="btn">Our Services</a>
+                <a href="apply.php" class="btn btn-primary">Apply Now</a>
+            </div>
         </div>
     </section>
 
     <!-- About Section -->
     <section class="section" id="about">
-        <div class="section-title">
-            <h2>About Us</h2>
-        </div>
-        <div class="about-content">
-            <div class="about-text">
-                <h3>About our agency</h3>
-                <p>We specialize in providing services to all companies. WE PROVIDE YOU RELIABLE, PRODUCTIVE LABOUR AND WORK HAND-IN-HAND TO ACHIEVE THE MOST EFFECTIVE EFFICIENT SERVICE AND BEST INTEGRATION FOR YOUR BUSINESS.</p>
-                <p>OUR GOAL IS TO CREATE LONG-TERM RELATIONSHIP AND RETENTION STRATEGIES THROUGHOUT EFFICIENCIES AND PERFORMANCES. IF YOU DON'T HAVE TIME IN HAND FOR YOUR STAFF NEEDS PLEASE CALL NOW.</p>
-                <p>OUR AIM IS TO ENSURE THAT DOING BUSINESS WITH US IS ENJOYABLE SIMPLE AND QUICK OUR VALUES ARE:</p>
-                <ul class="values-list">
-                    <li>LOOK FOR WAYS TO IMPROVE.</li>
-                    <li>BEST INTERACTION BETWEEN OUR WORKFORCE AND CUSTOMERS.</li>
-                    <li>ACT WITH HONESTY AND INTEGRITY.</li>
-                    <li>RESPECT OF THE ETHICAL STANDARDS.</li>
-                    <li>EMBRACE TEAMWORK.</li>
-                </ul>
+        <div class="container">
+            <div class="section-title">
+                <h2>About Us</h2>
             </div>
-            <div class="about-image">
-                <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Our Team">
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>About Our Agency</h3>
+                    <p>UK International Services Limited is a premier provider of professional business solutions with a global reach. We specialize in delivering exceptional services tailored to meet the diverse needs of modern businesses.</p>
+                    <p>Our mission is to bridge the gap between companies and top-tier professional talent, ensuring seamless operations and sustainable growth for our clients across various industries.</p>
+                    <p>We pride ourselves on our commitment to excellence, integrity, and innovation in all aspects of our service delivery. Our core values include:</p>
+                    <ul class="values-list">
+                        <li>Continuous improvement and innovation</li>
+                        <li>Exceptional client and workforce interaction</li>
+                        <li>Uncompromising honesty and integrity</li>
+                        <li>Adherence to highest ethical standards</li>
+                        <li>Collaborative teamwork approach</li>
+                    </ul>
+                </div>
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Our Professional Team">
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Services Section -->
     <section class="section services" id="services">
-        <div class="section-title">
-            <h2>Our Services</h2>
-        </div>
-        <div class="services-container">
-            <div class="service-card">
-                <div class="service-img">
-                    <img src="https://images.unsplash.com/photo-1581093450021-4a7360e9a3c4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Auto factory worker">
-                </div>
-                <div class="service-content">
-                    <h3>Auto factory worker</h3>
-                    <p>Performing routine maintenance on vehicles such as changing oil, rotating tires, replacing brake pads and rotors, checking fluid levels, and replacing filters.</p>
-                    <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
-                </div>
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Services</h2>
             </div>
-            <div class="service-card">
-                <div class="service-img">
-                    <img src="https://images.unsplash.com/photo-1551830820-330a71b99659?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Maintenance and repair of motor vehicles">
+            <div class="services-container">
+                <div class="service-card">
+                    <div class="service-img">
+                        <img src="https://images.unsplash.com/photo-1581093450021-4a7360e9a3c4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Auto factory worker">
+                    </div>
+                    <div class="service-content">
+                        <h3>Automotive Workforce Solutions</h3>
+                        <p>Comprehensive staffing solutions for automotive manufacturing, including skilled technicians, assembly line workers, and quality control specialists.</p>
+                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
                 </div>
-                <div class="service-content">
-                    <h3>Maintenance and repair of motor vehicles</h3>
-                    <p>This class includes maintenance and repair of motor vehicles: mechanical repairs, electrical repairs, electronic injection systems repair, ordinary servicing, bodywork repair, and more.</p>
-                    <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                <div class="service-card">
+                    <div class="service-img">
+                        <img src="https://images.unsplash.com/photo-1551830820-330a71b99659?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Maintenance and repair of motor vehicles">
+                    </div>
+                    <div class="service-content">
+                        <h3>Vehicle Maintenance Services</h3>
+                        <p>End-to-end vehicle maintenance and repair solutions including mechanical, electrical, and bodywork services by certified professionals.</p>
+                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
                 </div>
-            </div>
-            <div class="service-card">
-                <div class="service-img">
-                    <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2073&q=80" alt="Real estate brokerage">
+                <div class="service-card">
+                    <div class="service-img">
+                        <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2073&q=80" alt="Real estate brokerage">
+                    </div>
+                    <div class="service-content">
+                        <h3>Real Estate Services</h3>
+                        <p>Professional real estate brokerage services including property acquisition, sales, leasing, and investment consultation.</p>
+                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
                 </div>
-                <div class="service-content">
-                    <h3>Real estate brokerage</h3>
-                    <p>Planning to buy or sell a home? There's a good chance you'll work with a real estate agent, broker, or realtor. Though all of these real estate pros are licensed to help you buy, sell, or rent a home.</p>
-                    <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                <div class="service-card">
+                    <div class="service-img">
+                        <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80" alt="Food Services">
+                    </div>
+                    <div class="service-content">
+                        <h3>Food Service Solutions</h3>
+                        <p>Comprehensive staffing for hospitality sector including chefs, wait staff, and management personnel for restaurants and catering services.</p>
+                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
                 </div>
-            </div>
-            <div class="service-card">
-                <div class="service-img">
-                    <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80" alt="Food Services">
+                <div class="service-card">
+                    <div class="service-img">
+                        <img src="https://images.unsplash.com/photo-1575505586569-646b2ca898fc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1785&q=80" alt="Any Worker">
+                    </div>
+                    <div class="service-content">
+                        <h3>Specialized Workforce</h3>
+                        <p>Customized staffing solutions for various industries including skilled technicians, machine operators, and general labor professionals.</p>
+                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
                 </div>
-                <div class="service-content">
-                    <h3>Food Services</h3>
-                    <p>Just as important as culinary output is careful attention to all aspects of nutrition. Our experienced and expertly trained Registered Dietitians work in close collaboration with Medical Directors.</p>
-                    <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
-                </div>
-            </div>
-            <div class="service-card">
-                <div class="service-img">
-                    <img src="https://images.unsplash.com/photo-1575505586569-646b2ca898fc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1785&q=80" alt="Any Worker">
-                </div>
-                <div class="service-content">
-                    <h3>Any Worker</h3>
-                    <p>We provide skilled workers for various industries including machine operators, technicians, and general labor. Our workforce is trained and ready to meet your business needs.</p>
-                    <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
-                </div>
-            </div>
-            <div class="service-card">
-                <div class="service-img">
-                    <img src="https://images.unsplash.com/photo-1513828583688-c52646db42da?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="machine workers">
-                </div>
-                <div class="service-content">
-                    <h3>Machine Workers</h3>
-                    <p>Our skilled machine workers are trained to operate and maintain various types of industrial machinery. They ensure smooth production processes and quality output for your business.</p>
-                    <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                <div class="service-card">
+                    <div class="service-img">
+                        <img src="https://images.unsplash.com/photo-1513828583688-c52646db42da?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="machine workers">
+                    </div>
+                    <div class="service-content">
+                        <h3>Industrial Staffing</h3>
+                        <p>Expert workforce solutions for manufacturing and industrial operations including machine operators and production line specialists.</p>
+                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Image Slider -->
-    <div class="slider">
-        <div class="slide active">
-            <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80" alt="Team working">
-            <div class="slide-content">
-                <h3>Professional Workforce</h3>
-                <p>We provide highly skilled professionals for your business needs.</p>
+    <div class="container">
+        <div class="slider">
+            <div class="slide active">
+                <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80" alt="Team working">
+                <div class="slide-content">
+                    <h3>Professional Workforce Solutions</h3>
+                    <p>We provide highly skilled professionals tailored to your specific business requirements.</p>
+                </div>
             </div>
-        </div>
-        <div class="slide">
-            <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80" alt="Team meeting">
-            <div class="slide-content">
-                <h3>Team Collaboration</h3>
-                <p>Our workers are trained to work effectively in team environments.</p>
+            <div class="slide">
+                <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80" alt="Team meeting">
+                <div class="slide-content">
+                    <h3>Strategic Business Partnerships</h3>
+                    <p>Building long-term relationships that drive mutual growth and success.</p>
+                </div>
             </div>
-        </div>
-        <div class="slide">
-            <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Work environment">
-            <div class="slide-content">
-                <h3>Quality Work Environment</h3>
-                <p>We ensure our workers maintain high standards in any work setting.</p>
+            <div class="slide">
+                <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Work environment">
+                <div class="slide-content">
+                    <h3>Global Service Delivery</h3>
+                    <p>International reach with local expertise to serve your business needs worldwide.</p>
+                </div>
             </div>
-        </div>
-        <button class="prev"><i class="fas fa-chevron-left"></i></button>
-        <button class="next"><i class="fas fa-chevron-right"></i></button>
-        <div class="slider-nav">
-            <button class="active"></button>
-            <button></button>
-            <button></button>
+            <button class="prev"><i class="fas fa-chevron-left"></i></button>
+            <button class="next"><i class="fas fa-chevron-right"></i></button>
+            <div class="slider-nav">
+                <button class="active"></button>
+                <button></button>
+                <button></button>
+            </div>
         </div>
     </div>
 
     <!-- Team Section -->
     <section class="section" id="team">
-        <div class="section-title">
-            <h2>Our Team</h2>
-        </div>
-        <div class="team-member">
-            <img src="https://zaa.myartsonline.com/me1.jpg" alt="Dr. ISMAIL ZAAFOOR">
-            <h3>Dr. ISMAIL ZAAFOOR</h3>
-            <p>Chairperson of Board Directors</p>
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Team</h2>
+            </div>
+            <div class="team-member">
+                <img src="https://zaa.myartsonline.com/me1.jpg" alt="Dr. ISMAIL ZAAFOOR">
+                <h3>Dr. ISMAIL ZAAFOOR</h3>
+                <p>Chairperson of Board Directors</p>
+            </div>
         </div>
     </section>
 
     <!-- Contact Section -->
     <section class="section contact" id="contact">
-        <div class="section-title">
-            <h2>Contact Us</h2>
-        </div>
-        <div class="contact-container">
-            <div class="contact-info">
-                <h3>ZAAFOOR</h3>
-                <div class="info-item">
-                    <div class="info-icon">
-                        <i class="fas fa-map-marker-alt"></i>
-                    </div>
-                    <div class="info-text">
-                        <h4>Location</h4>
-                        <p>80A Lodge Lane, L8 0QL, Liverpool, United Kingdom</p>
-                    </div>
-                </div>
-                <div class="info-item">
-                    <div class="info-icon">
-                        <i class="fas fa-envelope"></i>
-                    </div>
-                    <div class="info-text">
-                        <h4>Email</h4>
-                        <a href="mailto:services@zaafoor.com">services@zaafoor.com</a>
-                    </div>
-                </div>
-                <div class="info-item">
-                    <div class="info-icon">
-                        <i class="fas fa-phone"></i>
-                    </div>
-                    <div class="info-text">
-                        <h4>Phone</h4>
-                        <p>0788809008 (English)</p>
-                        <p>07455577999 (Arabic)</p>
-                    </div>
-                </div>
+        <div class="container">
+            <div class="section-title">
+                <h2>Contact Us</h2>
             </div>
-            <div class="contact-form">
-                <form action="apply.php" method="POST">
-                    <div class="form-group">
-                        <input type="text" class="form-control" name="name" placeholder="Your Name" required>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>UK INTERNATIONAL SERVICES LIMITED</h3>
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="info-text">
+                            <h4>Location</h4>
+                            <p>80A Lodge Lane, L8 0QL, Liverpool, United Kingdom</p>
+                        </div>
                     </div>
-                    <div class="form-group">
-                        <input type="email" class="form-control" name="email" placeholder="Your Email" required>
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="info-text">
+                            <h4>Email</h4>
+                            <a href="mailto:uk.interservices@yahoo.com">uk.interservices@yahoo.com</a>
+                        </div>
                     </div>
-                    <div class="form-group">
-                        <input type="text" class="form-control" name="subject" placeholder="Subject" required>
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="info-text">
+                            <h4>Phone</h4>
+                            <p>0788809008 (English)</p>
+                            <p>07455577999 (Arabic)</p>
+                        </div>
                     </div>
-                    <div class="form-group">
-                        <textarea class="form-control" name="message" placeholder="Message" required></textarea>
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="info-text">
+                            <h4>Working Hours</h4>
+                            <p>Monday - Friday: 9:00 AM - 5:00 PM</p>
+                            <p>Saturday: 10:00 AM - 2:00 PM</p>
+                        </div>
                     </div>
-                    <button type="submit" class="submit-btn">Send Message</button>
-                </form>
+                </div>
+                <div class="contact-form">
+                    <form action="apply.php" method="POST">
+                        <div class="form-group">
+                            <input type="text" class="form-control" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" name="subject" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control" name="message" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </form>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
     <footer>
-        <div class="footer-content">
-            <div class="footer-col">
-                <h3>About ZAAFOOR</h3>
-                <p>A company that provides services limited professionally. We specialize in connecting businesses with reliable, productive workforce.</p>
-                <div class="social-links">
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h3>About UK INTERNATIONAL SERVICES LIMITED</h3>
+                    <p>A premier provider of professional business solutions with global reach, specializing in connecting businesses with top-tier professional talent across various industries.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul class="quick-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#team">Our Team</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="apply.php">Apply Now</a></li>
+                        <li><a href="arabic.html">العربية</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Our Services</h3>
+                    <ul class="quick-links">
+                        <li><a href="#">Automotive Workforce</a></li>
+                        <li><a href="#">Vehicle Maintenance</a></li>
+                        <li><a href="#">Real Estate Services</a></li>
+                        <li><a href="#">Food Service Solutions</a></li>
+                        <li><a href="#">Specialized Workforce</a></li>
+                        <li><a href="#">Industrial Staffing</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Company Info</h3>
+                    <p>Registered in England & Wales</p>
+                    <p>Company Number: 14120700</p>
+                    <p>VAT Number: GB 123 4567 89</p>
+                    <p>Registered Office: 80A Lodge Lane, Liverpool, L8 0QL</p>
                 </div>
             </div>
-            <div class="footer-col">
-                <h3>Quick Links</h3>
-                <ul class="quick-links">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About Us</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#team">Our Team</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <li><a href="apply.php">Apply Now</a></li>
-                </ul>
+            <div class="footer-bottom">
+                <p>&copy; 2023 UK INTERNATIONAL SERVICES LIMITED. All Rights Reserved</p>
+                <p>Designed with <i class="fas fa-heart" style="color: #ff6b00;"></i> for our clients</p>
             </div>
-            <div class="footer-col">
-                <h3>Services</h3>
-                <ul class="quick-links">
-                    <li><a href="#">Auto factory worker</a></li>
-                    <li><a href="#">Maintenance and repair</a></li>
-                    <li><a href="#">Real estate brokerage</a></li>
-                    <li><a href="#">Food Services</a></li>
-                    <li><a href="#">Any Worker</a></li>
-                    <li><a href="#">machine workers</a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p>&copy; Copyright Younis Dany. All Rights Reserved</p>
-            <p>Designed by Younis Dany</p>
         </div>
     </footer>
 
@@ -1038,9 +1123,11 @@
         window.addEventListener('scroll', () => {
             const header = document.querySelector('header');
             if(window.scrollY > 100) {
-                header.style.boxShadow = '0 2px 15px rgba(0, 0, 0, 0.1)';
+                header.style.boxShadow = '0 5px 20px rgba(0, 0, 0, 0.15)';
+                header.style.background = 'rgba(255, 255, 255, 0.98)';
             } else {
-                header.style.boxShadow = '0 2px 10px rgba(0, 0, 0, 0.1)';
+                header.style.boxShadow = '0 2px 15px rgba(0, 0, 0, 0.1)';
+                header.style.background = 'rgba(255, 255, 255, 0.95)';
             }
         });
 
@@ -1107,7 +1194,7 @@
 
         // Animation on scroll
         function animateOnScroll() {
-            const elements = document.querySelectorAll('.section-title, .about-content, .service-card, .team-member, .contact-container');
+            const elements = document.querySelectorAll('.section-title, .about-content, .service-card, .team-member, .contact-container, .info-item');
             
             elements.forEach(element => {
                 const elementPosition = element.getBoundingClientRect().top;
@@ -1121,14 +1208,18 @@
         }
 
         // Set initial state for animation
-        document.querySelectorAll('.section-title, .about-content, .service-card, .team-member, .contact-container').forEach(element => {
+        document.querySelectorAll('.section-title, .about-content, .service-card, .team-member, .contact-container, .info-item').forEach(element => {
             element.style.opacity = '0';
             element.style.transform = 'translateY(30px)';
             element.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
         });
 
         window.addEventListener('scroll', animateOnScroll);
-        window.addEventListener('load', animateOnScroll);
+        window.addEventListener('load', () => {
+            animateOnScroll();
+            // Show first slide on load
+            showSlide(0);
+        });
     </script>
 </body>
 </html>
