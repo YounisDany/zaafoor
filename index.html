@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UK INTERNATIONAL SERVICES LIMITED | Professional Business Solutions</title>
+    <title>شركة الخدمات البريطانية الدولية المحدودة | حلول أعمال احترافية</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700&display=swap" rel="stylesheet">
     <style>
         :root {
             --primary: #0056b3;
@@ -23,15 +23,16 @@
         }
         
         body {
-            font-family: 'Poppins', sans-serif;
+            font-family: 'Tajawal', sans-serif;
             color: var(--dark);
             line-height: 1.6;
             overflow-x: hidden;
             background-color: #f5f7fa;
+            direction: rtl;
+            text-align: right;
         }
         
         h1, h2, h3, h4 {
-            font-family: 'Montserrat', sans-serif;
             font-weight: 700;
         }
         
@@ -42,6 +43,7 @@
         
         ul {
             list-style: none;
+            padding-right: 0;
         }
         
         .btn {
@@ -65,7 +67,8 @@
         
         .btn-primary {
             background: var(--secondary);
-            margin-left: 15px;
+            margin-left: 0;
+            margin-right: 15px;
         }
         
         .btn-primary:hover {
@@ -87,7 +90,7 @@
             left: 0;
             width: 100%;
             z-index: 1000;
-            padding: 20px 0;
+            padding: 2px 0;
             transition: var(--transition);
             background: rgba(255, 255, 255, 0.95);
             box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
@@ -97,13 +100,14 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
+            direction: rtl;
         }
         
         .logo {
-            font-size: 20px;
+            font-size: 15px;
             font-weight: 700;
             color: var(--dark);
-            font-family: 'Montserrat', sans-serif;
+        
         }
         
         .logo span {
@@ -116,7 +120,8 @@
         }
         
         .nav-links li {
-            margin-left: 30px;
+            margin-right: 30px;
+            margin-left: 0;
             position: relative;
         }
         
@@ -130,7 +135,8 @@
             content: '';
             position: absolute;
             bottom: -5px;
-            left: 0;
+            right: 0;
+            left: auto;
             width: 0;
             height: 2px;
             background: var(--primary);
@@ -217,8 +223,8 @@
             content: '';
             position: absolute;
             bottom: 0;
-            left: 50%;
-            transform: translateX(-50%);
+            right: 50%;
+            transform: translateX(50%);
             width: 80px;
             height: 3px;
             background: var(--primary);
@@ -247,7 +253,8 @@
         .values-list li {
             margin-bottom: 10px;
             position: relative;
-            padding-left: 25px;
+            padding-right: 25px;
+            padding-left: 0;
         }
         
         .values-list li:before {
@@ -255,7 +262,8 @@
             font-family: 'Font Awesome 6 Free';
             font-weight: 900;
             position: absolute;
-            left: 0;
+            right: 0;
+            left: auto;
             top: 2px;
             color: var(--secondary);
         }
@@ -347,12 +355,13 @@
         }
         
         .read-more i {
-            margin-left: 5px;
+            margin-right: 5px;
+            margin-left: 0;
             transition: var(--transition);
         }
         
         .read-more:hover i {
-            transform: translateX(5px);
+            transform: translateX(-5px);
         }
         
         /* Slider */
@@ -386,11 +395,12 @@
         .slide-content {
             position: absolute;
             bottom: 0;
-            left: 0;
+            right: 0;
             width: 100%;
             padding: 50px;
             background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
             color: white;
+            text-align: right;
         }
         
         .slide-content h3 {
@@ -419,18 +429,20 @@
         }
         
         .prev {
-            left: 30px;
+            right: 30px;
+            left: auto;
         }
         
         .next {
-            right: 30px;
+            left: 30px;
+            right: auto;
         }
         
         .slider-nav {
             position: absolute;
             bottom: 20px;
-            left: 50%;
-            transform: translateX(-50%);
+            right: 50%;
+            transform: translateX(50%);
             display: flex;
             z-index: 10;
         }
@@ -515,7 +527,7 @@
             content: '';
             position: absolute;
             bottom: 0;
-            left: 0;
+            right: 0;
             width: 60px;
             height: 3px;
             background: var(--secondary);
@@ -535,7 +547,8 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            margin-right: 20px;
+            margin-left: 20px;
+            margin-right: 0;
             font-size: 20px;
             color: var(--secondary);
         }
@@ -570,7 +583,7 @@
             padding: 12px 15px;
             border: 1px solid #ddd;
             border-radius: 5px;
-            font-family: 'Poppins', sans-serif;
+            font-family: 'Tajawal', sans-serif;
             transition: var(--transition);
         }
         
@@ -628,7 +641,7 @@
             content: '';
             position: absolute;
             bottom: 0;
-            left: 0;
+            right: 0;
             width: 40px;
             height: 2px;
             background: var(--secondary);
@@ -673,7 +686,7 @@
         .quick-links a:hover {
             opacity: 1;
             color: var(--secondary);
-            transform: translateX(5px);
+            transform: translateX(-5px);
         }
         
         .footer-bottom {
@@ -719,7 +732,8 @@
             .nav-links {
                 position: fixed;
                 top: 80px;
-                left: -100%;
+                right: -100%;
+                left: auto;
                 width: 100%;
                 height: calc(100vh - 80px);
                 background: white;
@@ -731,7 +745,7 @@
             }
             
             .nav-links.active {
-                left: 0;
+                right: 0;
             }
             
             .nav-links li {
@@ -753,6 +767,7 @@
             }
             
             .btn-primary {
+                margin-right: auto;
                 margin-left: auto;
             }
             
@@ -786,37 +801,39 @@
 </head>
 <body>
     <!-- Header -->
-<header>
-    <div class="container">
-        <div class="header-inner">
-            <a href="#" class="logo">
-                <img src="lo.png" alt="UK International Services Logo" style="height: 80px;">
+    <header>
+        <div class="container">
+            <div class="header-inner">
+                 <a href="#" class="logo">
+                <img src="lo.png" alt="UK International Services Logo" style="height:120px;">
+                                    <br>
             </a>
-            <button class="mobile-menu-btn">
-                <i class="fas fa-bars"></i>
-            </button>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#team">Team</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="apply.php">Apply Now</a></li>
-                <li><a href="arabic.html">العربية</a></li>
-            </ul>
+               
+                <button class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <ul class="nav-links">
+                    <li><a href="#home">الرئيسية</a></li>
+                    <li><a href="#about">من نحن</a></li>
+                    <li><a href="#services">خدماتنا</a></li>
+                    <li><a href="#team">فريقنا</a></li>
+                    <li><a href="#contact">اتصل بنا</a></li>
+                    <li><a href="apply.php">تقديم طلب</a></li>
+                    <li><a href="en.html">English</a></li>
+                </ul>
+            </div>
         </div>
-    </div>
-</header>
-
+    </header>
 
     <!-- Hero Section -->
     <section class="hero" id="home">
         <div class="hero-content">
-            <h1>Professional Business Solutions Worldwide</h1>
-            <p>We specialize in connecting businesses with reliable, productive workforce to achieve the most effective and efficient service for your business needs.</p>
+          <h1>شركة الخدمات البريطانية <span>الدولية</span></h1>
+            <h1>حلول أعمال احترافية عالمية</h1>
+            <p>نحن متخصصون في ربط الشركات مع قوى عاملة موثوقة ومنتجة لتحقيق الخدمة الأكثر فعالية وكفاءة لاحتياجات عملك.</p>
             <div class="hero-buttons">
-                <a href="#services" class="btn">Our Services</a>
-                <a href="apply.php" class="btn btn-primary">Apply Now</a>
+                <a href="#services" class="btn">خدماتنا</a>
+                <a href="apply.php" class="btn btn-primary">تقديم طلب</a>
             </div>
         </div>
     </section>
@@ -825,126 +842,151 @@
     <section class="section" id="about">
         <div class="container">
             <div class="section-title">
-                <h2>About Us</h2>
+                <h2>من نحن</h2>
             </div>
             <div class="about-content">
                 <div class="about-text">
-                    <h3>About Our Agency</h3>
-                    <p>UK International Services Limited is a premier provider of professional business solutions with a global reach. We specialize in delivering exceptional services tailored to meet the diverse needs of modern businesses.</p>
-                    <p>Our mission is to bridge the gap between companies and top-tier professional talent, ensuring seamless operations and sustainable growth for our clients across various industries.</p>
-                    <p>We pride ourselves on our commitment to excellence, integrity, and innovation in all aspects of our service delivery. Our core values include:</p>
+                    <h3>عن شركتنا</h3>
+                    <p>شركة الخدمات البريطانية الدولية المحدودة هي مزود رائد لحلول الأعمال الاحترافية مع وجود عالمي. نحن متخصصون في تقديم خدمات استثنائية مصممة خصيصًا لتلبية الاحتياجات المتنوعة للشركات الحديثة.</p>
+                    <p>مهمتنا هي سد الفجوة بين الشركات وأفضل المواهب المحترفة، وضمان عمليات سلسة ونمو مستدام لعملائنا عبر مختلف الصناعات.</p>
+                    <p>نفتخر بالتزامنا بالتميز والنزاهة والابتكار في جميع جوانب تقديم الخدمات. تشمل قيمنا الأساسية:</p>
                     <ul class="values-list">
-                        <li>Continuous improvement and innovation</li>
-                        <li>Exceptional client and workforce interaction</li>
-                        <li>Uncompromising honesty and integrity</li>
-                        <li>Adherence to highest ethical standards</li>
-                        <li>Collaborative teamwork approach</li>
+                        <li>التحسين المستمر والابتكار</li>
+                        <li>التفاعل الاستثنائي مع العملاء والقوى العاملة</li>
+                        <li>الصدق والنزاهة التي لا هوادة فيها</li>
+                        <li>الالتزام بأعلى المعايير الأخلاقية</li>
+                        <li>نهج العمل الجماعي التعاوني</li>
                     </ul>
                 </div>
                 <div class="about-image">
-                    <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Our Professional Team">
+                    <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="فريقنا المحترف">
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Services Section -->
-    <section class="section services" id="services">
-        <div class="container">
-            <div class="section-title">
-                <h2>Our Services</h2>
-            </div>
-            <div class="services-container">
-                <div class="service-card">
-                    <div class="service-img">
-                        <img src="https://images.unsplash.com/photo-1581093450021-4a7360e9a3c4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Auto factory worker">
-                    </div>
-                    <div class="service-content">
-                        <h3>Automotive Workforce Solutions</h3>
-                        <p>Comprehensive staffing solutions for automotive manufacturing, including skilled technicians, assembly line workers, and quality control specialists.</p>
-                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </div>
-                <div class="service-card">
-                    <div class="service-img">
-                        <img src="https://images.unsplash.com/photo-1551830820-330a71b99659?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Maintenance and repair of motor vehicles">
-                    </div>
-                    <div class="service-content">
-                        <h3>Vehicle Maintenance Services</h3>
-                        <p>End-to-end vehicle maintenance and repair solutions including mechanical, electrical, and bodywork services by certified professionals.</p>
-                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </div>
-                <div class="service-card">
-                    <div class="service-img">
-                        <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2073&q=80" alt="Real estate brokerage">
-                    </div>
-                    <div class="service-content">
-                        <h3>Real Estate Services</h3>
-                        <p>Professional real estate brokerage services including property acquisition, sales, leasing, and investment consultation.</p>
-                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </div>
-                <div class="service-card">
-                    <div class="service-img">
-                        <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80" alt="Food Services">
-                    </div>
-                    <div class="service-content">
-                        <h3>Food Service Solutions</h3>
-                        <p>Comprehensive staffing for hospitality sector including chefs, wait staff, and management personnel for restaurants and catering services.</p>
-                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </div>
-                <div class="service-card">
-                    <div class="service-img">
-                        <img src="https://images.unsplash.com/photo-1575505586569-646b2ca898fc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1785&q=80" alt="Any Worker">
-                    </div>
-                    <div class="service-content">
-                        <h3>Specialized Workforce</h3>
-                        <p>Customized staffing solutions for various industries including skilled technicians, machine operators, and general labor professionals.</p>
-                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </div>
-                <div class="service-card">
-                    <div class="service-img">
-                        <img src="https://images.unsplash.com/photo-1513828583688-c52646db42da?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="machine workers">
-                    </div>
-                    <div class="service-content">
-                        <h3>Industrial Staffing</h3>
-                        <p>Expert workforce solutions for manufacturing and industrial operations including machine operators and production line specialists.</p>
-                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </div>
-            </div>
+<section class="section services" id="services">
+    <div class="container">
+        <div class="section-title">
+            <h2>خدماتنا</h2>
         </div>
-    </section>
+        <div class="services-container">
+
+            <!-- خدمة: حلول القوى العاملة للسيارات -->
+            <div class="service-card">
+                <div class="service-img">
+                    <img src="https://images.unsplash.com/photo-1581093450021-4a7360e9a3c4?auto=format&fit=crop&w=2070&q=80" alt="عامل مصنع سيارات">
+                </div>
+                <div class="service-content">
+                    <h3>حلول القوى العاملة للسيارات</h3>
+                    <p>نقدم حلولًا شاملة لقطاع تصنيع السيارات، تشمل توفير الفنيين المهرة، مشغلي خطوط الإنتاج، ومختصي مراقبة الجودة.  
+                    نضمن اختيار الكفاءات الأعلى أداءً لدعم العمليات الإنتاجية، مع التدريب المستمر لتعزيز المهارات وتحقيق معايير الجودة العالمية.  
+                    نهدف إلى تمكين عملائنا من تحقيق الكفاءة التشغيلية وتقليل نسب الأخطاء، مما يسهم في رفع الإنتاجية وتعزيز القدرة التنافسية.</p>
+                    <a href="#" class="read-more">اقرأ المزيد <i class="fas fa-arrow-left"></i></a>
+                </div>
+            </div>
+
+            <!-- خدمة: خدمات صيانة المركبات -->
+            <div class="service-card">
+                <div class="service-img">
+                    <img src="https://images.unsplash.com/photo-1551830820-330a71b99659?auto=format&fit=crop&w=2070&q=80" alt="صيانة وإصلاح المركبات">
+                </div>
+                <div class="service-content">
+                    <h3>خدمات صيانة المركبات</h3>
+                    <p>نوفر حلول صيانة وإصلاح متكاملة لجميع أنواع المركبات من خلال شبكة واسعة من الفنيين المؤهلين.  
+                    تشمل خدماتنا الفحص الدوري، الإصلاحات الميكانيكية والكهربائية، إصلاح الهيكل، وتركيب قطع الغيار الأصلية.  
+                    نضمن لك أداءً موثوقًا، وسرعة في الإنجاز، وجودة فائقة، مما يطيل عمر مركبتك ويحافظ على سلامتك على الطرقات.</p>
+                    <a href="#" class="read-more">اقرأ المزيد <i class="fas fa-arrow-left"></i></a>
+                </div>
+            </div>
+
+            <!-- خدمة: الخدمات العقارية والمقاولات المعمارية -->
+            <div class="service-card">
+                <div class="service-img">
+                    <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=2073&q=80" alt="وساطة عقارية ومقاولات">
+                </div>
+                <div class="service-content">
+                    <h3>الخدمات العقارية والمقاولات المعمارية</h3>
+                    <p>نقدم خدمات عقارية متكاملة تشمل الوساطة العقارية، شراء وبيع وتأجير العقارات، بالإضافة إلى الاستشارات الاستثمارية المبنية على خبرة ميدانية واسعة.  
+                    كما نتميز بتنفيذ مشاريع معمارية وإنشائية بأعلى معايير الجودة، مستندين إلى فريق هندسي متميز وتقنيات بناء متطورة.  
+                    رؤيتنا أن نكون الخيار الأول للعملاء الباحثين عن حلول عقارية وهندسية موثوقة تجمع بين الإبداع والاحترافية.</p>
+                    <a href="#" class="read-more">اقرأ المزيد <i class="fas fa-arrow-left"></i></a>
+                </div>
+            </div>
+
+            <!-- خدمة: حلول خدمات الطعام -->
+            <div class="service-card">
+                <div class="service-img">
+                    <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=1974&q=80" alt="خدمات الطعام">
+                </div>
+                <div class="service-content">
+                    <h3>حلول خدمات الطعام</h3>
+                    <p>نوفر خدمات إعداد وتقديم الطعام بجودة عالية تلبي جميع الاحتياجات من الشركات الكبرى إلى المناسبات الخاصة.  
+                    تشمل خدماتنا إعداد قوائم طعام مخصصة، تقديم خدمات الضيافة، وتوفير حلول تموينية مبتكرة بإشراف طهاة محترفين.  
+                    نضمن لك تجربة ضيافة راقية تجمع بين الطعم الفاخر والخدمة المتميزة في كل مناسبة.</p>
+                    <a href="#" class="read-more">اقرأ المزيد <i class="fas fa-arrow-left"></i></a>
+                </div>
+            </div>
+
+            <!-- خدمة: قوى عاملة متخصصة -->
+            <div class="service-card">
+                <div class="service-img">
+                    <img src="https://images.unsplash.com/photo-1575505586569-646b2ca898fc?auto=format&fit=crop&w=1785&q=80" alt="قوى عاملة متخصصة">
+                </div>
+                <div class="service-content">
+                    <h3>قوى عاملة متخصصة</h3>
+                    <p>نقدم حلول توظيف متخصصة عبر جميع الصناعات والقطاعات بما يشمل الفنيين المهرة، مشغلي الآلات، والمختصين في الأعمال الصناعية واللوجستية.  
+                    تركز حلولنا على اختيار الكفاءات المثالية لكل وظيفة، مما يضمن سرعة الأداء، الدقة، والالتزام بمعايير الجودة المطلوبة لكل مشروع أو مؤسسة.</p>
+                    <a href="#" class="read-more">اقرأ المزيد <i class="fas fa-arrow-left"></i></a>
+                </div>
+            </div>
+
+            <!-- خدمة: توظيف صناعي -->
+            <div class="service-card">
+                <div class="service-img">
+                    <img src="https://images.unsplash.com/photo-1513828583688-c52646db42da?auto=format&fit=crop&w=2070&q=80" alt="عمال آلات صناعية">
+                </div>
+                <div class="service-content">
+                    <h3>توظيف صناعي</h3>
+                    <p>نوفر قوى عاملة صناعية محترفة لتلبية احتياجات المصانع وشركات التصنيع الكبرى.  
+                    تشمل خدماتنا توفير مشغلي آلات متقدمين، عمال خطوط الإنتاج، وأخصائيي الجودة، مع تقديم برامج تدريب متخصصة لضمان جاهزية الفرق للعمل الفوري والكفء.  
+                    نهدف إلى تحقيق أعلى مستويات الكفاءة والإنتاجية لعملائنا في القطاع الصناعي.</p>
+                    <a href="#" class="read-more">اقرأ المزيد <i class="fas fa-arrow-left"></i></a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
 
     <!-- Image Slider -->
     <div class="container">
         <div class="slider">
             <div class="slide active">
-                <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80" alt="Team working">
+                <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80" alt="فريق العمل">
                 <div class="slide-content">
-                    <h3>Professional Workforce Solutions</h3>
-                    <p>We provide highly skilled professionals tailored to your specific business requirements.</p>
+                    <h3>حلول القوى العاملة المحترفة</h3>
+                    <p>نوفر محترفين ذوي مهارات عالية مصممة خصيصًا لمتطلبات عملك الخاصة.</p>
                 </div>
             </div>
             <div class="slide">
-                <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80" alt="Team meeting">
+                <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80" alt="اجتماع فريق">
                 <div class="slide-content">
-                    <h3>Strategic Business Partnerships</h3>
-                    <p>Building long-term relationships that drive mutual growth and success.</p>
+                    <h3>شراكات عمل استراتيجية</h3>
+                    <p>بناء علاقات طويلة الأجل تدفع النمو المتبادل والنجاح.</p>
                 </div>
             </div>
             <div class="slide">
-                <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Work environment">
+                <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="بيئة العمل">
                 <div class="slide-content">
-                    <h3>Global Service Delivery</h3>
-                    <p>International reach with local expertise to serve your business needs worldwide.</p>
+                    <h3>تقديم الخدمات العالمية</h3>
+                    <p>وصول دولي مع خبرة محلية لخدمة احتياجات عملك في جميع أنحاء العالم.</p>
                 </div>
             </div>
-            <button class="prev"><i class="fas fa-chevron-left"></i></button>
-            <button class="next"><i class="fas fa-chevron-right"></i></button>
+            <button class="prev"><i class="fas fa-chevron-right"></i></button>
+            <button class="next"><i class="fas fa-chevron-left"></i></button>
             <div class="slider-nav">
                 <button class="active"></button>
                 <button></button>
@@ -957,12 +999,14 @@
     <section class="section" id="team">
         <div class="container">
             <div class="section-title">
-                <h2>Our Team</h2>
+                <h2>فريقنا</h2>
             </div>
             <div class="team-member">
-                <img src="me.png" alt="Dr. ISMAIL ZAAFOOR">
-                <h3>Dr. ISMAIL ZAAFOOR</h3>
-                <p>Chairperson of Board Directors</p>
+                <img src="me.png" alt="د. إسماعيل زعفور">
+                <h3>د. إسماعيل زعفور</h3>
+                <p>رئيس مجلس الإدارة</p>
+<p> المدير العام</p>
+
             </div>
         </div>
     </section>
@@ -971,26 +1015,28 @@
     <section class="section contact" id="contact">
         <div class="container">
             <div class="section-title">
-                <h2>Contact Us</h2>
+                <h2>اتصل بنا</h2>
             </div>
             <div class="contact-container">
                 <div class="contact-info">
-                    <h3>UK INTERNATIONAL SERVICES LIMITED</h3>
+                    <h3>شركة الخدمات البريطانية الدولية المحدودة</h3>
                     <div class="info-item">
                         <div class="info-icon">
                             <i class="fas fa-map-marker-alt"></i>
                         </div>
-                        <div class="info-text">
-                            <h4>Location</h4>
-                            <p>80A Lodge Lane, L8 0QL, Liverpool, United Kingdom</p>
-                        </div>
+                     <div class="info-text">
+    <h4>العنوان</h4>
+    <p>80A Lodge Lane, L8 0QL, Liverpool, United Kingdom</p>
+    <p>المملكة العربية السعودية، جدة 23354، حي الواحة الربيع بن زيد (8380)، مبنى رقم (3596)</p>
+</div>
+
                     </div>
                     <div class="info-item">
                         <div class="info-icon">
                             <i class="fas fa-envelope"></i>
                         </div>
                         <div class="info-text">
-                            <h4>Email</h4>
+                            <h4>البريد الإلكتروني</h4>
                             <a href="mailto:uk.interservices@yahoo.com">uk.interservices@yahoo.com</a>
                         </div>
                     </div>
@@ -998,39 +1044,42 @@
                         <div class="info-icon">
                             <i class="fas fa-phone"></i>
                         </div>
-                        <div class="info-text">
-                            <h4>Phone</h4>
-                            <p>0788809008 (English)</p>
-                            <p>07455577999 (Arabic)</p>
-                             <p>00966500244497 (KSA)</p>
-                        </div>
+                  <div class="info-text">
+    <h4>الهاتف</h4>
+    <p>+44788809008</p>
+    <p>+447455577999</p>
+    <p>+966509446667</p>
+</div>
+
                     </div>
                     <div class="info-item">
                         <div class="info-icon">
                             <i class="fas fa-clock"></i>
                         </div>
-                        <div class="info-text">
-                            <h4>Working Hours</h4>
-                            <p>Monday - Friday: 9:00 AM - 5:00 PM</p>
-                            <p>Saturday: 10:00 AM - 2:00 PM</p>
-                        </div>
+                   <div class="info-text">
+    <h4>ساعات العمل</h4>
+    <p>الاثنين - الخميس: 09:00 ص - 02:00 م ومن 05:00 م - 11:00 م</p>
+    <p>الجمعة: 05:00 م - 11:00 م</p>
+    <p>السبت: 05:00 م - 11:00 م</p>
+</div>
+
                     </div>
                 </div>
                 <div class="contact-form">
                     <form action="apply.php" method="POST">
                         <div class="form-group">
-                            <input type="text" class="form-control" name="name" placeholder="Your Name" required>
+                            <input type="text" class="form-control" name="name" placeholder="اسمك" required>
                         </div>
                         <div class="form-group">
-                            <input type="email" class="form-control" name="email" placeholder="Your Email" required>
+                            <input type="email" class="form-control" name="email" placeholder="بريدك الإلكتروني" required>
                         </div>
                         <div class="form-group">
-                            <input type="text" class="form-control" name="subject" placeholder="Subject" required>
+                            <input type="text" class="form-control" name="subject" placeholder="الموضوع" required>
                         </div>
                         <div class="form-group">
-                            <textarea class="form-control" name="message" placeholder="Your Message" required></textarea>
+                            <textarea class="form-control" name="message" placeholder="رسالتك" required></textarea>
                         </div>
-                        <button type="submit" class="submit-btn">Send Message</button>
+                        <button type="submit" class="submit-btn">إرسال الرسالة</button>
                     </form>
                 </div>
             </div>
@@ -1042,8 +1091,8 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-col">
-                    <h3>About UK INTERNATIONAL SERVICES LIMITED</h3>
-                    <p>A premier provider of professional business solutions with global reach, specializing in connecting businesses with top-tier professional talent across various industries.</p>
+                    <h3>عن شركة الخدمات البريطانية الدولية المحدودة</h3>
+                    <p>مزود رائد لحلول الأعمال الاحترافية مع وجود عالمي، متخصص في ربط الشركات بأفضل المواهب المحترفة عبر مختلف الصناعات.</p>
                     <div class="social-links">
                         <a href="#"><i class="fab fa-facebook-f"></i></a>
                         <a href="#"><i class="fab fa-twitter"></i></a>
@@ -1052,39 +1101,39 @@
                     </div>
                 </div>
                 <div class="footer-col">
-                    <h3>Quick Links</h3>
+                    <h3>روابط سريعة</h3>
                     <ul class="quick-links">
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#about">About Us</a></li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#team">Our Team</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                        <li><a href="apply.php">Apply Now</a></li>
-                        <li><a href="arabic.html">العربية</a></li>
+                        <li><a href="#home">الرئيسية</a></li>
+                        <li><a href="#about">من نحن</a></li>
+                        <li><a href="#services">خدماتنا</a></li>
+                        <li><a href="#team">فريقنا</a></li>
+                        <li><a href="#contact">اتصل بنا</a></li>
+                        <li><a href="apply.php">تقديم طلب</a></li>
+                        <li><a href="en.html">English</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
-                    <h3>Our Services</h3>
+                    <h3>خدماتنا</h3>
                     <ul class="quick-links">
-                        <li><a href="#">Automotive Workforce</a></li>
-                        <li><a href="#">Vehicle Maintenance</a></li>
-                        <li><a href="#">Real Estate Services</a></li>
-                        <li><a href="#">Food Service Solutions</a></li>
-                        <li><a href="#">Specialized Workforce</a></li>
-                        <li><a href="#">Industrial Staffing</a></li>
+                        <li><a href="#">القوى العاملة للسيارات</a></li>
+                        <li><a href="#">صيانة المركبات</a></li>
+                        <li><a href="#">الخدمات العقارية</a></li>
+                        <li><a href="#">حلول خدمات الطعام</a></li>
+                        <li><a href="#">قوى عاملة متخصصة</a></li>
+                        <li><a href="#">توظيف صناعي</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
-                    <h3>Company Info</h3>
-                    <p>Registered in England & Wales</p>
-                    <p>Company Number: 14120700</p>
-                    <p>VAT Number: GB 123 4567 89</p>
-                    <p>Registered Office: 80A Lodge Lane, Liverpool, L8 0QL</p>
+                    <h3>معلومات الشركة</h3>
+                    <p>مسجلة في إنجلترا وويلز</p>
+                    <p>رقم الشركة: 14120700</p>
+                    <p>رقم ضريبة القيمة المضافة: GB 123 4567 89</p>
+                    <p>المكتب المسجل: 80A Lodge Lane, Liverpool, L8 0QL</p>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2023 UK INTERNATIONAL SERVICES LIMITED. All Rights Reserved</p>
-                <p>Designed with <i class="fas fa-heart" style="color: #ff6b00;"></i> for our clients</p>
+                <p>&copy; 2023 شركة الخدمات البريطانية الدولية المحدودة. جميع الحقوق محفوظة</p>
+                <p>مصمم ب <i class="fas fa-heart" style="color: #ff6b00;"></i> لعملائنا</p>
             </div>
         </div>
     </footer>
@@ -1176,13 +1225,13 @@
 
         // Event listeners for buttons
         nextBtn.addEventListener('click', () => {
-            nextSlide();
+            prevSlide();
             clearInterval(slideInterval);
             slideInterval = setInterval(nextSlide, 5000);
         });
 
         prevBtn.addEventListener('click', () => {
-            prevSlide();
+            nextSlide();
             clearInterval(slideInterval);
             slideInterval = setInterval(nextSlide, 5000);
         });
